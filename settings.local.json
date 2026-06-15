@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($bytes = [System.IO.File]::ReadAllBytes\\('C:\\\\Users\\\\Suraj\\\\Documents\\\\Apps\\\\fig1_63\\\\model.glb'\\)[0..4000]; $jsonLen = [BitConverter]::ToUInt32\\($bytes[12..15],0\\); $txt = [System.Text.Encoding]::UTF8.GetString\\($bytes[20..\\([Math]::Min\\(4000, 20+$jsonLen-1\\)\\)]\\); $txt.Substring\\(0, [Math]::Min\\(3000, $txt.Length\\)\\))",
+      "mcp__Claude_Preview__preview_start",
+      "WebSearch",
+      "WebFetch(domain:commons.wikimedia.org)"
+    ]
+  }
+}
